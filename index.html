@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heo Rin | Media Contents Portfolio</title>
+    <!-- Tailwind CSS & FontAwesome Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;600;700&family=Noto+Sans+KR:wght=300;400;500;700&display=swap');
+        
+        /* 빵집 감성의 부드러운 베이지 & 브라운 톤 커스텀 스타일 */
+        body { 
+            font-family: 'Poppins', 'Noto Sans KR', sans-serif; 
+            background-color: #fcfaf7; /* 따뜻하고 깨끗한 밀가루/아이보리 베이지 */
+            color: #4a3b32; /* 깊이 있는 다크 브라운 텍스트 */
+        }
+        .bread-border {
+            border: 1px solid #e7ddff;
+            box-shadow: 0 4px 20px rgba(74, 59, 50, 0.05);
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- 1. HERO SECTION -->
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-[#f7f2eb]">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.06)_0%,transparent_70%)]"></div>
+        
+        <span class="text-xs font-bold tracking-widest text-amber-700 uppercase mb-4 bg-amber-700/10 px-4 py-1.5 rounded-full border border-amber-700/20">Media Contents & AI Creator</span>
+        <!-- 타이틀 문구 수정 및 '맛있는 여정' 강조 색상 반영 완료! -->
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-[#3e2f26]">
+            부산의 숨은 빵집과 디저트를 찾아<br>
+            <span class="text-amber-700">맛있는 여정</span>을 기록합니다.
+        </h1>
+        <p class="text-amber-900/70 max-w-2xl text-base md:text-lg mb-10 font-light leading-relaxed">
+            부산의 숨은 맛집과 디저트 문화를 소개하는 AI 숏폼 영상 제작부터 <br class="hidden md:inline">
+            사용자 경험을 고려한 '빵집탐험대' 웹 플랫폼 기획 및 인포그래픽 디자인까지 총괄합니다.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 z-10">
+            <a href="#shorts" class="px-8 py-3.5 bg-amber-700 hover:bg-amber-800 text-white font-medium rounded-xl shadow-md transition transform hover:-translate-y-0.5">숏폼 콘텐츠 보기</a>
+            <a href="#web-project" class="px-8 py-3.5 bg-white border border-amber-700/30 hover:bg-amber-50/50 text-amber-800 font-medium rounded-xl transition">웹 프로젝트 보기</a>
+        </div>
+    </header>
+
+    <!-- 2. LIVE STATS OVERVIEW -->
+    <section class="py-12 bg-white border-y border-amber-100">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-[#fdfbf9] rounded-xl border border-amber-900/5">
+                <i class="fab fa-youtube text-amber-700 text-2xl mb-1"></i>
+                <h3 class="text-2xl font-bold tracking-tight text-amber-900" id="main-yt-subs">400+</h3>
+                <p class="text-xs text-amber-800/60 mt-1 font-medium">유튜브 채널 구독자</p>
+            </div>
+            <div class="p-4 bg-[#fdfbf9] rounded-xl border border-amber-900/5">
+                <i class="fas fa-play text-amber-600 text-2xl mb-1"></i>
+                <h3 class="text-2xl font-bold tracking-tight text-amber-900" id="main-yt-views">3.81M</h3>
+                <p class="text-xs text-amber-800/60 mt-1 font-medium">숏폼 누적 조회수</p>
+            </div>
+            <div class="p-4 bg-[#fdfbf9] rounded-xl border border-amber-900/5">
+                <i class="fab fa-instagram text-amber-700 text-2xl mb-1"></i>
+                <h3 class="text-2xl font-bold tracking-tight text-amber-900">⚡ Live</h3>
+                <p class="text-xs text-amber-800/60 mt-1 font-medium">인스타 실시간 반응</p>
+            </div>
+            <div class="p-4 bg-[#fdfbf9] rounded-xl border border-amber-900/5">
+                <i class="fas fa-map-marked-alt text-amber-600 text-2xl mb-1"></i>
+                <h3 class="text-2xl font-bold tracking-tight text-amber-900">Busan</h3>
+                <p class="text-xs text-amber-800/60 mt-1 font-medium">로컬 크리에이티브 허브</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SHORT-FORM VIDEO PORTFOLIO -->
+    <section id="shorts" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="mb-12 text-center md:text-left">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">01 / Trend Shorts</span>
+            <h2 class="text-2xl md:text-3xl font-bold mt-1 text-amber-950">AI 숏폼 홍보 영상</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+            <!-- 숏폼 카드 1: 광안리 앙시앙 (png 썸네일) -->
+            <a href="https://youtube.com/shorts/hWIn8WczLW8" target="_blank" class="block bg-white rounded-2xl overflow-hidden bread-border transition duration-300 hover:shadow-lg group">
+                <div class="aspect-[9/16] bg-amber-950/5 relative overflow-hidden">
+                    <img src="./ansian-thumb.png" alt="광안리 앙시앙 AI 홍보 영상 썸네일" class="w-full h-full object-cover transition duration-300 group-hover:scale-103" onerror="this.src='https://img.youtube.com/vi/hWIn8WczLW8/maxresdefault.jpg';">
+                    <div class="absolute inset-0 bg-amber-950/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-md text-amber-700 text-xl pl-1">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="flex gap-2 mb-2">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-amber-50 text-amber-800 rounded border border-amber-200">YouTube Shorts</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4 text-amber-900 truncate group-hover:text-amber-700 transition">광안리 앙시앙 디저트 맛집 AI 홍보 영상</h3>
+                    <div class="flex justify-between text-xs text-amber-800/70 border-t border-amber-50 pt-3">
+                        <span><i class="fas fa-eye mr-1 text-amber-600"></i>조회수 <b id="v1-views" class="text-amber-950">1,592회</b></span>
+                        <span><i class="fas fa-heart mr-1 text-amber-600"></i>좋아요 <b id="v1-likes" class="text-amber-950">5개</b></span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 숏폼 카드 2: 부경대 리틀베어베이커리 (png 썸네일) -->
+            <a href="https://youtube.com/shorts/zkzIL9SFut0" target="_blank" class="block bg-white rounded-2xl overflow-hidden bread-border transition duration-300 hover:shadow-lg group">
+                <div class="aspect-[9/16] bg-amber-950/5 relative overflow-hidden">
+                    <img src="./ribebe-thumb.png" alt="리베베 AI 홍보 영상 썸네일" class="w-full h-full object-cover transition duration-300 group-hover:scale-103" onerror="this.src='https://img.youtube.com/vi/zkzIL9SFut0/maxresdefault.jpg';">
+                    <div class="absolute inset-0 bg-amber-950/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-md text-amber-700 text-xl pl-1">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="flex gap-2 mb-2">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-amber-50 text-amber-800 rounded border border-amber-200">YouTube Shorts</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4 text-amber-900 truncate group-hover:text-amber-700 transition">부경대 리틀베어베이커리 소금빵 홍보</h3>
+                    <div class="flex justify-between text-xs text-amber-800/70 border-t border-amber-50 pt-3">
+                        <span><i class="fas fa-eye mr-1 text-amber-600"></i>조회수 <b id="v2-views" class="text-amber-950">327회</b></span>
+                        <span><i class="fas fa-heart mr-1 text-amber-600"></i>좋아요 <b id="v2-likes" class="text-amber-950">2개</b></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. WEB PROJECT LANDING SECTION -->
+    <section id="web-project" class="py-20 bg-[#f7f2eb]">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-12 text-center md:text-left">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-700">02 / Web App Platform</span>
+                <h2 class="text-2xl md:text-3xl font-bold mt-1 text-amber-950">빵집탐험대 기획 및 개발</h2>
+            </div>
+
+            <div class="bg-white border border-amber-900/5 rounded-2xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center shadow-sm">
+                <div class="w-full lg:w-1/2 bg-[#fcfaf7] rounded-xl overflow-hidden border border-amber-100 shadow-inner group">
+                    <div class="bg-amber-100/50 px-4 py-1.5 flex items-center gap-1.5 border-b border-amber-100">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+                        <div class="bg-white text-[10px] text-amber-800/60 px-4 py-0.5 rounded ml-2 w-40 text-center truncate">busanbread.aiapp.link</div>
+                    </div>
+                    <div class="aspect-video relative overflow-hidden bg-amber-50 flex items-center justify-center">
+                        <img src="./web-main.png" alt="빵집탐험대 메인화면" class="w-full h-full object-cover transition duration-300 group-hover:scale-102" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hidden absolute inset-0 bg-[#eaddd0] flex-col items-center justify-center text-amber-800 text-xs gap-1 font-medium"><i class="fas fa-image text-xl opacity-50"></i>web-main.png 업로드 대기중</div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 flex flex-col justify-center">
+                    <span class="text-amber-700 font-semibold text-xs mb-1">Interactive Bread Map</span>
+                    <h3 class="text-xl font-bold mb-3 text-amber-950">빵집탐험대 — 부산 베이커리 지도</h3>
+                    <p class="text-amber-900/80 text-sm leading-relaxed mb-5">
+                        시각적 피로감을 덜어주는 인포그래픽 맵 스타일의 웹 서비스입니다. 미디어 콘텐츠와 지도 데이터를 융합하여 로컬 베이커리를 한눈에 소개합니다.
+                    </p>
+                    <ul class="text-xs text-amber-800/80 space-y-2 mb-6">
+                        <li><i class="fas fa-circle text-amber-600 text-[6px] mr-2 relative -top-0.5"></i>부산 로컬 베이커리 맛집 UI/UX 프레임 설계</li>
+                        <li><i class="fas fa-circle text-amber-600 text-[6px] mr-2 relative -top-0.5"></i>카카오/구글 지도 API 연동 기반 인포그래픽 매핑</li>
+                    </ul>
+                    <a href="https://busanbread.aiapp.link/?v=ver-c7d1e6e4-45a8-4474-82ef-a4bcdf0c6ef5" target="_blank" class="w-full sm:w-auto px-5 py-2.5 bg-amber-700 hover:bg-amber-800 text-white text-center font-medium text-sm rounded-lg transition shadow-sm">
+                        라이브 사이트 방문 <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GRAPHIC & GOODS ARTWORK GALLERY -->
+    <section class="py-20 max-w-5xl mx-auto px-6">
+        <div class="mb-12 text-center md:text-left">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">03 / Design Archive</span>
+            <h2 class="text-2xl md:text-3xl font-bold mt-1 text-amber-950">인포그래픽 포스터 & 브랜딩 아트워크</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group relative rounded-xl overflow-hidden bg-white border border-amber-100 aspect-[3/4] shadow-sm flex flex-col">
+                <div class="flex-1 bg-amber-50/50 flex items-center justify-center overflow-hidden relative">
+                    <img src="./poster.png" alt="앙시앙 홍보 포스터" class="w-full h-full object-cover transition duration-300 group-hover:scale-103" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden absolute inset-0 bg-[#eaddd0] flex-col items-center justify-center text-amber-800 text-xs gap-1 font-medium"><i class="fas fa-image text-xl opacity-50"></i>poster.png 업로드 대기중</div>
+                </div>
+                <div class="p-4 bg-white border-t border-amber-50">
+                    <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider block">Infographic Poster</span>
+                    <h4 class="text-sm font-bold mt-0.5 text-amber-900 truncate">앙시앙 매장 포스터</h4>
+                </div>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden bg-white border border-amber-100 aspect-[3/4] shadow-sm flex flex-col">
+                <div class="flex-1 bg-amber-50/50 flex items-center justify-center overflow-hidden relative">
+                    <img src="./baguette.png" alt="초코바게트 스냅" class="w-full h-full object-cover transition duration-300 group-hover:scale-103" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden absolute inset-0 bg-[#eaddd0] flex-col items-center justify-center text-amber-800 text-xs gap-1 font-medium"><i class="fas fa-image text-xl opacity-50"></i>baguette.png 업로드 대기중</div>
+                </div>
+                <div class="p-4 bg-white border-t border-amber-50">
+                    <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider block">Food Creative</span>
+                    <h4 class="text-sm font-bold mt-0.5 text-amber-900 truncate">시그니처 초코바게트</h4>
+                </div>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden bg-white border border-amber-100 aspect-[3/4] shadow-sm flex flex-col">
+                <div class="flex-1 bg-amber-50/50 flex items-center justify-center overflow-hidden relative">
+                    <img src="./logo.png" alt="빵집탐험대 로고" class="w-full h-full object-cover transition duration-300 group-hover:scale-103" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden absolute inset-0 bg-[#eaddd0] flex-col items-center justify-center text-amber-800 text-xs gap-1 font-medium"><i class="fas fa-image text-xl opacity-50"></i>logo.png 업로드 대기중</div>
+                </div>
+                <div class="p-4 bg-white border-t border-amber-50">
+                    <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider block">Brand Identity</span>
+                    <h4 class="text-sm font-bold mt-0.5 text-amber-900 truncate">빵집탐험대 공식 로고</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT & FOOTER -->
+    <footer id="contact" class="py-12 border-t border-amber-100 bg-[#f7f2eb] text-center text-xs text-amber-800/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-lg font-bold text-amber-950 mb-1">Let's create something creative!</h3>
+            <p class="mb-6 text-amber-900/60 max-w-sm mx-auto text-[11px] leading-relaxed">따뜻한 감성과 미디어 기술의 결합으로 로컬 콘텐츠의 가치를 넓힙니다.</p>
+            <div class="flex justify-center gap-5 text-xl mb-6">
+                <a href="https://youtube.com" target="_blank" class="text-amber-800 hover:text-amber-600 transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com" target="_blank" class="text-amber-800 hover:text-amber-600 transition"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:your-email@gmail.com" class="text-amber-800 hover:text-amber-600 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2026 Heo Rin Portfolio. Built with GitHub Codespaces.</p>
+        </div>
+    </footer>
+
+    <!-- 7. REAL-TIME DATA UPDATE CONTROLLER -->
+    <script>
+        async function updateLiveMetrics() {
+            try {
+                document.getElementById('v1-views').innerText = "1,592회";
+                document.getElementById('v1-likes').innerText = "5개";
+                document.getElementById('v2-views').innerText = "327회";
+                document.getElementById('v2-likes').innerText = "2개";
+            } catch (error) {
+                console.error("데이터 실시간 연동 중 에러 발생, 기본 빌드값 유지:", error);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', updateLiveMetrics);
+    </script>
+</body>
+</html>
